@@ -31,7 +31,7 @@ fi
 
 # Start processing
 ipa=$1
-echo [*] unpacking..
+echo "[*] unpacking.."
 cd $(dirname $ipa)
 unzip "$ipa"
 cd Payload
@@ -47,4 +47,4 @@ cd ..
 echo "[*] packaging.."
 zip -r "$ipa-fakesigned.ipa" Payload
 rm -f -r Payload
-echo [*] Created "$ipa-fakesigned.ipa"
+echo "[*] Created $ipa-fakesigned.ipa"
